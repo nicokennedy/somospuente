@@ -1,3 +1,7 @@
+body {
+  font-family: Helvetica;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -52,6 +56,30 @@
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.button {
+  background-color: #ffa891;
+  border: none;
+  color: #00838a;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+ text-decoration: none;
+ background-color: #00838a; /* Green */
+ color: #ffa891;
+}
+
+.container {
+ padding: 2rem 1rem;
+ position: relative;
 }
 
 // Specific CSS for your home-page
