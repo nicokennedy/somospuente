@@ -10,7 +10,7 @@
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_url "manos.jpg" %>);">
       <div class="container">
         <h1><strong>Somos tu puente</strong></h1>
-        <p>Conectamos empresas con ONGs para lograr donaciones que tengan impacto social!</p>
+        <p>Conectamos empresas con ONGs para lograr donaciones que tengan impacto social.</p>
         <a class="button" href="#proyectos"><strong>¡Conocé los proyectos!</strong></a>
       </div>
     </div>
@@ -21,21 +21,23 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                <%= image_tag "card.jpg", alt: "Somos tu puente", style: 'width:100%' %>
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", style: 'width:100%' %>
                 <div class="card-body">
-                  <h5 class="card-title"><strong>Acceder Estudiando</strong></h5>
+                  <%= image_tag "logomujeres2000.png", alt: "Somos tu puente", style: 'width:100%' %>
+                  <h5 class="card-title font-italic"><strong>Acceder estudiando</strong></h5>
                   <p class="card-text">
-                  <p class="text-justify">El Programa Acceder Estudiando busca facilitar el acceso a
+                  <p class="text-justify ">El Programa Acceder Estudiando busca facilitar el acceso a
                   la educación a través de una ayuda económica mensual que le permite solventar gastos de
                   estudio, acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
                   de la provincia de Buenos Aires. </p>
-                  <p>ONG: Mujeres 2000</p>
-                  <p>Plazo: 6 meses</p>
+                  <p><i class="far fa-calendar-alt"></i> 6 meses</p>
+                  <p><i class="fas fa-hand-holding-usd"></i> $362.000</p>
+                  <p><i class="fas fa-graduation-cap"></i> Educación</p>
                 </div>
                 <div class="card-footer">
-                  <p>Monto: $362.000</p>
+                  <p>Cuánto recaudamos?</p>
                   <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60% completado</div>
                   </div>
                   <br>
                   <div class="text-center">
@@ -43,17 +45,18 @@
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
             <div class="col">
               <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <%= image_tag "card.jpg", alt: "Somos tu puente", style: 'width:100%' %>
                 <div class="card-body">
-                  <h5 class="card-title"><strong>Taller de oficios</strong></h5>
+                  <h5 class="card-title"><strong>Haciendo Camino</strong></h5>
+                  <h5 class="card-title font-italic">Taller de oficios</h5>
                   <p class="card-text">
                   <p class="text-justify">Se brinda capacitaciones en manualidades, costura, telar, tejito, gastronomía, carpintería y
                   peluquería a madres de 74 familias vulnerables en la provincia de Santiago del Estero. </p>
-                  <p>ONG: Haciendo Camino</p>
                   <p>Plazo: 12 meses</p>
+                  <%= image_tag "", alt: "Logo Haciendo camino", style: 'width:100%' %>
                 </div>
                 <div class="card-footer">
                   <p>Monto: $618.921</p>
@@ -92,7 +95,7 @@
           </div>
         </div>
     </div>
-    <div class="container-fluid bg-white">
+    <div class="container-fluid bg-white" id="comofunciona">
       <div class="container bg-white">
         <h4><strong>¿Cómo funciona?</strong></h4>
         <div class="row">
@@ -100,7 +103,7 @@
             <div class="card-product bg-white">
                 <%= image_tag "paso1.png", alt: "Somos tu puente", style: 'width:150px' %>
               <div class="card-product-infos">
-               <p>Cargamos el proyecto que la ONG quiera promocionar para recibir las donaciones.</p>
+               <p>La ONG carga el proyecto quiera promocionar para recibir donaciones.</p>
               </div>
             </div>
           </div>
@@ -126,7 +129,7 @@
             <div class="card-product bg-white">
               <%= image_tag "paso4.png", alt: "Somos tu puente", style: 'width:150px' %>
               <div class="card-product-infos">
-              <p>La empresa recibe un mail en el cual contiene los datos de la ONG para realizar la donación.</p>
+              <p>La empresa recibe la información con los datos de la ONG para realizar la donación.</p>
               </div>
             </div>
           </div>
@@ -149,14 +152,22 @@
         </div>
       </div>
     </div>
-  <div class="container">
+  <div class="container" id="quienessomos">
     <div class="row">
       <div class="col-sm">
        <h3><strong>¿Quienes somos?</strong></h3>
-        <p class="text-justify">Creemos firmemente que la tarea que realizan las ONGs es clave para generar un cambio social y
-        ambiental.También sabemos que el aporte de las empresas es fundamental en este ciclo de ayuda que
+        <p class="text-justify">La tarea que realizan las ONGs es clave para generar un cambio social y
+        ambiental. Y sabemos que el aporte de las empresas es fundamental en este ciclo de ayuda que
         se retroalimenta. Por eso creamos Somos Tu Puente: el puente que conecta a las empresas con las ONGs,
         a través de donaciones, para mejorar la calidad de vida y lograr una transformación social.</p>
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col"><i class="far fa-handshake"></i> Compromiso</div>
+            <div class="col"><i class="fas fa-users"></i> Trabajo en equipo</div>
+            <div class="col"><i class="fas fa-user-tie"></i> Profesionalismo</div>
+            <div class="col"><i class="fas fa-hand-holding-water"></i> Gestión</div>
+          </div>
+        </div>
       </div>
       <div class="col-sm">
         <div class="card-product">
@@ -173,7 +184,7 @@
         </div>
         <br>
         <div class="card-product">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/cveneziani", class: "avatar", alt: "avatar" %>
+          <%= image_tag "logomujeres2000.png", class: "avatar", alt: "avatar" %>
           <div class="card-product-infos">
             <h2>Julieta Iribarne</h2>
             <p>Profesora para el Nivel Primario.
