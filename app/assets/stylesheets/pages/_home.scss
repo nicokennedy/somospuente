@@ -82,4 +82,39 @@ body {
  position: relative;
 }
 
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 14px;
+  font: Helvetica;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+
 // Specific CSS for your home-page

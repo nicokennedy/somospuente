@@ -11,24 +11,25 @@
       <div class="container">
         <h1><strong>Somos tu puente</strong></h1>
         <p>Conectamos empresas con ONGs para lograr donaciones que tengan impacto social!</p>
-        <a class="button" href="#"><strong>¡Conocé los proyectos!</strong></a>
+        <a class="button" href="#proyectos"><strong>¡Conocé los proyectos!</strong></a>
       </div>
     </div>
 
-    <div class="container">
-      <div class="container bg-light">
+      <div class="container bg-light2" id="proyectos">
         <h4><strong>Principales proyectos</strong></h4>
         <div class="row">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <%= image_tag "card.jpg", alt: "Somos tu puente", style: 'width:100%' %>
                 <div class="card-body">
-                  <h5 class="card-title">Nombre proyecto: Acceder Estudiando</h5>
+                  <h5 class="card-title"><strong>Acceder Estudiando</strong></h5>
                   <p class="card-text">
+                  <p class="text-justify">El Programa Acceder Estudiando busca facilitar el acceso a
+                  la educación a través de una ayuda económica mensual que le permite solventar gastos de
+                  estudio, acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                  de la provincia de Buenos Aires. </p>
                   <p>ONG: Mujeres 2000</p>
-                  <p>Descripción:  El Programa Acceder Estudiando busca facilitar el
-                  acceso a la educación superior y promover la empleabilidad de 5 ...</p>
                   <p>Plazo: 6 meses</p>
                 </div>
                 <div class="card-footer">
@@ -44,14 +45,14 @@
               </div>
               </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <%= image_tag "card.jpg", alt: "Somos tu puente", style: 'width:100%' %>
                 <div class="card-body">
-                  <h5 class="card-title">Nombre proyecto: Taller de oficios</h5>
+                  <h5 class="card-title"><strong>Taller de oficios</strong></h5>
                   <p class="card-text">
-                  <p>ONG: Haciendo Camino</p>
-                  <p>Descripción: Se brinda capacitaciones en manualidades, costura, telar, tejito, gastronomía, carpintería y
+                  <p class="text-justify">Se brinda capacitaciones en manualidades, costura, telar, tejito, gastronomía, carpintería y
                   peluquería a madres de 74 familias vulnerables en la provincia de Santiago del Estero. </p>
+                  <p>ONG: Haciendo Camino</p>
                   <p>Plazo: 12 meses</p>
                 </div>
                 <div class="card-footer">
@@ -67,7 +68,7 @@
               </div>
               </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <%= image_tag "card.jpg", alt: "Somos tu puente", style: 'width:100%' %>
                 <div class="card-body">
                   <h5 class="card-title">Nombre proyecto</h5>
@@ -90,63 +91,103 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     <div class="container-fluid bg-white">
       <div class="container bg-white">
         <h4><strong>¿Cómo funciona?</strong></h4>
         <div class="row">
           <div class="col-sm">
-              <%= image_tag "paso1.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Cargar proyecto</strong>
-              Cargamos el proyecto que la ONG quiera promocionar para recibir las donaciones.</p>
+            <div class="card-product bg-white">
+                <%= image_tag "paso1.png", alt: "Somos tu puente", style: 'width:150px' %>
+              <div class="card-product-infos">
+               <p>Cargamos el proyecto que la ONG quiera promocionar para recibir las donaciones.</p>
+              </div>
+            </div>
           </div>
           <div class="col-sm">
-          <div class="col-sm">
-              <%= image_tag "paso2.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Buscar proyecto</strong>
-              La empresa busca el proyecto para realizar su donación.</p>
+            <div class="card-product bg-white">
+                <%= image_tag "paso2.png", alt: "Somos tu puente", style: 'width:150px' %>
+              <div class="card-product-infos">
+               <p>La empresa busca el proyecto para realizar su donación.</p>
+              </div>
+            </div>
           </div>
-          </div>
-          <div class="col-sm">
-          <div class="col-sm">
-              <%= image_tag "paso3.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Seleccionar proyecto</strong>
-              La empresa selecciona el proyecto que desea.</p>
-          </div>
+           <div class="col-sm">
+            <div class="card-product bg-white">
+                <%= image_tag "paso3.png", alt: "Somos tu puente", style: 'width:150px' %>
+              <div class="card-product-infos">
+               <p>La empresa selecciona el proyecto que desea.</p>
+              </div>
+            </div>
           </div>
         </div>
-          <div class="row">
+        <div class="row">
           <div class="col-sm">
+            <div class="card-product bg-white">
               <%= image_tag "paso4.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Donar</strong>
-              La empresa recibe un mail en el cual contiene los datos de la ONG para realizar la donación. </p>
+              <div class="card-product-infos">
+              <p>La empresa recibe un mail en el cual contiene los datos de la ONG para realizar la donación.</p>
+              </div>
+            </div>
           </div>
           <div class="col-sm">
-          <div class="col-sm">
+            <div class="card-product bg-white">
               <%= image_tag "paso5.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Notificación</strong>
-              La empresa y la ONG reciben una notificación de la donación realizada.</p>
-          </div>
+              <div class="card-product-infos">
+              <p>La empresa y la ONG reciben una notificación de la donación realizada.</p>
+              </div>
+            </div>
           </div>
           <div class="col-sm">
-          <div class="col-sm">
+            <div class="card-product bg-white">
               <%= image_tag "paso6.png", alt: "Somos tu puente", style: 'width:150px' %>
-              <p class="card-text"><strong>Reporte</strong>
-              La ONG debe realizar un reporte a la empresa de los avances y logros del proyecto.</p>
-          </div>
+              <div class="card-product-infos">
+              <p>La ONG debe realizar un reporte a la empresa de los avances y logros del proyecto.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-    <h3>QUIENES SOMOS?</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+       <h3><strong>¿Quienes somos?</strong></h3>
+        <p class="text-justify">Creemos firmemente que la tarea que realizan las ONGs es clave para generar un cambio social y
+        ambiental.También sabemos que el aporte de las empresas es fundamental en este ciclo de ayuda que
+        se retroalimenta. Por eso creamos Somos Tu Puente: el puente que conecta a las empresas con las ONGs,
+        a través de donaciones, para mejorar la calidad de vida y lograr una transformación social.</p>
+      </div>
+      <div class="col-sm">
+        <div class="card-product">
+          <%= image_tag "victoria.jpg", class: "avatar", alt: "avatar" %>
+          <div class="card-product-infos">
+            <h2>Victoria Kennedy</h2>
+            <p>Lic. en Comunicación Periodística.
+            Voluntaria en el Barrio 31 de la Ciudad de Bs As, en Colonia Barragan,
+            Mar del Plata y Un Techo para mi País. Experiencia laboral en Cáritas Buenos Aires y
+            la Gerencia de Hogares y Paradores, Min. de Desarrollo Social, Gob. de
+            la Ciudad de Bs As.
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="card-product">
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/cveneziani", class: "avatar", alt: "avatar" %>
+          <div class="card-product-infos">
+            <h2>Julieta Iribarne</h2>
+            <p>Profesora para el Nivel Primario.
+            Voluntaria en la Villa 21-24, Villa Soldati, Geriátrico en la Ciudad de Bs As. Experiencia laboral
+            Tutorías pedagógicas en la Fundación Haciendo Camino y
+            Apoyo escolar a niños del nivel primario y secundario.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
+   <div class="container">
     <div class="footer">
       <div class="footer-links">
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -157,7 +198,7 @@
         Proyecto hecho con <i class="fas fa-heart"></i> de Somos tu Puente
       </div>
     </div>
-
+   </div>
 
   </body>
 </html>
