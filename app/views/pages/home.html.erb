@@ -38,9 +38,10 @@
                   <p><i class="fas fa-hand-holding-usd"></i> $180.000</p>
                   <p><i class="fas fa-graduation-cap"></i> Educación</p>
                   <p><i class="fas fa-map-marker-alt"></i> Buenos Aires</p>
-                  <div class="progress">
-                    <div class="progress-bar bg-warning " role="progressbar" style="width: 60%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">60% recaudado</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span>60% recaudado</span>
+                      </div>
                     </div>
                     <br>
                     <div class="text-center">
@@ -52,9 +53,9 @@
             <div class="col">
               <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <div class="containeroverlay">
-                  <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", style: 'width:100%' %>
+                  <%= image_tag "logohaciendo.png", alt: "Somos tu puente", style: 'width:100%' %>
                   <div class="overlay">
-                    <%= image_tag "logohaciendo.png", alt: "Somos tu puente", style: 'width:100%' %>
+                    <%= image_tag "haciendocamino.jpeg", alt: "Somos tu puente", style: 'width:100%' %>
                   </div>
                 </div>
                 <div class="card-body">
@@ -69,9 +70,10 @@
                   <p><i class="fas fa-hand-holding-usd"></i> $426.000</p>
                   <p><i class="fas fa-medkit"></i> Salud</p>
                   <p><i class="fas fa-map-marker-alt"></i> Santiago del Estero</p>
-                  <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">10%</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                          <span>10% recaudado</span>
+                      </div>
                     </div>
                     <br>
                     <div class="text-center">
@@ -100,9 +102,10 @@
                   <p><i class="fas fa-hand-holding-usd"></i> $900.000</p>
                   <p><i class="fas fa-medkit"></i> Salud</p>
                   <p><i class="fas fa-map-marker-alt"></i> CABA</p>
-                  <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">60% recaudado</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span>60% recaudado</span>
+                      </div>
                     </div>
                     <br>
                     <div class="text-center">
@@ -175,19 +178,27 @@
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-8">
+        <div class="col-10">
           <h3 class="text-center"><strong>¿Por qué creamos un puente?</strong></h3>
           <p class="text-justify">La tarea que realizan las ONGs junto con las donaciones de las empresas es
           fundamental para generar un cambio social y ambiental. El vínculo entre ambas partes crea este ciclo
           de ayuda que se retroalimenta y produce un impacto positivo. Por eso creamos Somos Tu Puente: el puente
           que simplifica la relación entre las empresas y las ONGs para lograr donaciones más eficientes y
           productivas.</p>
-          <div class="container text-center">
-            <div class="row row-cols-2">
-              <div class="col"><i class="far fa-handshake"></i> Compromiso</div>
-              <div class="col"><i class="fas fa-users"></i> Trabajo en equipo</div>
-              <div class="col"><i class="fas fa-user-tie"></i> Profesionalismo</div>
-              <div class="col"><i class="fas fa-hand-holding-water"></i> Gestión transparente</div>
+          <div class="row align-items-center text-center">
+            <div class="col">
+              <i class="far fa-handshake"></i><p class="d-none d-lg-block">Compromiso</p>
+            </div>
+            <div class="col">
+              <i class="fas fa-users"></i><p class="d-none d-lg-block">Trabajo en equipo</p>
+            </div>
+          </div>
+          <div class="row align-items-center text-center">
+            <div class="col">
+              <i class="fas fa-user-tie"></i><p class="d-none d-lg-block">Profesionalismo</p>
+            </div>
+            <div class="col">
+              <i class="fas fa-hand-holding-water"></i><p class="d-none d-lg-block">Gestión transparente</p>
             </div>
           </div>
         </div>
@@ -204,11 +215,11 @@
             <%= image_tag "victoria.jpg", class: "avatar", alt: "avatar" %>
             <div class="card-product-infos-1">
               <h2>Victoria Kennedy</h2>
-              <p>Lic. en Comunicación Periodística.
+              <p class="d-none d-lg-block">Lic. en Comunicación Periodística.
               Voluntaria en el Barrio 31 de la Ciudad de Bs. As., en Colonia Barragan,
               Mar del Plata y Un Techo para mi País. Experiencia laboral en Cáritas Buenos Aires y
-              Ministerio de Desarrollo Social de GCBA.
-              </p>
+              Ministerio de Desarrollo Social de GCBA.</p>
+              <p class="d-lg-none">Lic. en Comunicación Periodística.</p>
             </div>
           </div>
         </div>
@@ -217,11 +228,11 @@
               <%= image_tag "juli.jpg", class: "avatar", alt: "avatar" %>
               <div class="card-product-infos-1  ">
                 <h2>Julieta Iribarne</h2>
-                <p>Maestra para el nivel primario.
+                <p class="d-none d-lg-block">Maestra para el nivel primario.
                 Voluntaria en la Villa 21-24, Villa Soldati, Geriátrico en la Ciudad de Bs As. Experiencia laboral
                 Tutorías pedagógicas en la Fundación Haciendo Camino y
-                Apoyo escolar a niños del nivel primario y secundario.
-                </p>
+                Apoyo escolar a niños del nivel primario y secundario.</p>
+                <p class="d-lg-none">Maestra para el nivel primario.</p>
               </div>
             </div>
           </div>
@@ -237,8 +248,11 @@
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="far fa-envelope"></i></a>
       </div>
-      <div class="footer-copyright">
+      <div class="footer-copyright d-none d-lg-block">
         Proyecto hecho con <i class="fas fa-heart"></i> de Somos tu Puente
+      </div>
+       <div class="footer-copyright d-lg-none">
+        Somos tu Puente
       </div>
     </div>
    </div>
