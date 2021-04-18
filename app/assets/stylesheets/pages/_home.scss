@@ -2,6 +2,11 @@ body {
   font-family: Helvetica;
 }
 
+h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -88,12 +93,10 @@ body {
   background: #F4F4F4;
   display: flex;
   align-items: center;
-  text-align: justify;
 }
 
 .card-product img {
   width: 60%;
-  height: 150px;
 }
 
 .card-product h2 {
@@ -109,12 +112,11 @@ body {
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
-  word-spacing: -2px;
 }
 
 .card-product .card-product-infos {
   padding: 16px;
-  align-items: center;
+  text-align: center;
 }
 
 .containeroverlay {
@@ -162,7 +164,6 @@ body {
   background: #F4F4F4;
   display: flex;
   align-items: center;
-  text-align: justify;
 }
 
 .card-product-1 img {
@@ -184,7 +185,6 @@ body {
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
-  word-spacing: -2px;
 }
 
 .card-product-1 .card-product-infos-1 {
@@ -239,6 +239,7 @@ body {
 .flip-card-front {
   background-color: white;
   color: black;
+  text-align: center;
 }
 
 /* Style the back side */
@@ -247,7 +248,6 @@ body {
   color: black;
   transform: rotateY(180deg);
   text-align: center;
-  justify-content: center;
 }
 
 // Specific CSS for your home-page

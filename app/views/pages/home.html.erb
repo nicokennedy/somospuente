@@ -27,7 +27,7 @@
                         <div class="flip-card-front">
                           <h5 class="card-title font-italic text-center bg-light"><strong>Acceder estudiando</strong></h5>
                           <p class="card-text">
-                          <p class="text-justify ">El Programa Acceder Estudiando busca facilitar el acceso a
+                          <p class="text-left">El Programa Acceder Estudiando busca facilitar el acceso a
                           la educación a través de una ayuda económica mensual que le permite solventar gastos de
                           estudio, acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
                           de la provincia de Buenos Aires. </p>
@@ -58,7 +58,7 @@
             <div class="col">
               <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                 <div class="containeroverlay">
-                    <%= image_tag "logohaciendo.png", alt: "Somos tu puente", style: 'width:100%' %>
+                    <%= image_tag "logomonte.png", alt: "Somos tu puente", style: 'width:100%' %>
                 </div>
                 <div class="card-body">
                    <div class="flip-card">
@@ -66,7 +66,7 @@
                         <div class="flip-card-front">
                           <h5 class="card-title font-italic text-center bg-light"><strong>Taller de Oficios </strong></h5>
                           <p class="card-text">
-                          <p class="text-justify ">Con el objetivo de empoderar a las mujeres y madres rurales para que puedan generar
+                          <p class="text-left ">Con el objetivo de empoderar a las mujeres y madres rurales para que puedan generar
                             ngresos que colaboren con el sostenimiento del hogar, brindamos talleres de oficios semanales con un enfoque
                             mprendedor en las disciplinas de tejido, costura, manualidades y gastronomía, dictados por profesoras locales
                             formadas en dichas disciplinas. Participan 180 mujeres y madres rurales.
@@ -104,9 +104,9 @@
                     <div class="flip-card">
                       <div class="flip-card-inner">
                         <div class="flip-card-front">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Centro de Cuidados VER TIT OK?</strong></h5>
+                          <h5 class="card-title font-italic text-center bg-light"><strong>Primera infancia en familia</strong></h5>
                           <p class="card-text">
-                          <p class="text-justify ">El proyecto busca promover el bienestar y la salud integral de 30
+                          <p class="text-left ">El proyecto busca promover el bienestar y la salud integral de 30
                           niños y niñas de entre 0 y 5 años que viven en la villa 21-24 de Barracas (CABA).
                           Se trabaja en 4 dispositivos diferentes: embarazo y primer año de vida, prevención de
                           la desnutrición y malnutrición, prevención de violencia de género con las madres de niños
@@ -114,7 +114,7 @@
                           <i class="fas fa-sync-alt"></i>
                         </div>
                         <div class="flip-card-back">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Centro de Cuidados VER TIT OK?</strong></h5>
+                          <h5 class="card-title font-italic text-center bg-light"><strong>Primera infancia en familia</strong></h5>
                           <p><i class="far fa-calendar-alt"></i> 12 meses</p>
                           <p><i class="fas fa-hand-holding-usd"></i> $900.000</p>
                           <p><i class="fas fa-medkit"></i> Salud</p>
@@ -196,12 +196,8 @@
       </div>
     </div>
   <div class="container" id="porque">
-      <div class="row">
-        <div class="col">
-        </div>
-        <div class="col-10">
-          <h3 class="text-center"><strong>¿Por qué creamos un puente?</strong></h3>
-          <p class="text-justify">La tarea que realizan las ONGs junto con las donaciones de las empresas es
+    <h4><strong>¿Por qué creamos un puente?</strong></h3>
+          <p class="text-left">La tarea que realizan las ONGs junto con las donaciones de las empresas es
           fundamental para generar un cambio social y ambiental. El vínculo entre ambas partes crea este ciclo
           de ayuda que se retroalimenta y produce un impacto positivo. Por eso creamos Somos Tu Puente: el puente
           que simplifica la relación entre las empresas y las ONGs para lograr donaciones más eficientes y
@@ -223,8 +219,6 @@
             </div>
           </div>
         </div>
-        <div class="col">
-        </div>
       </div>
   </div>
   <div class="container-fluid bg-white" id="quienessomos">
@@ -234,8 +228,8 @@
           <div class="card-product-1 bg-white">
             <%= image_tag "victoria.jpg", class: "avatar", alt: "avatar" %>
             <div class="card-product-infos-1">
-              <h2>Victoria Kennedy</h2>
-              <p class="d-none d-lg-block">Lic. en Comunicación Periodística.
+              <h2 class="text-center">Victoria Kennedy</h2>
+              <p class="d-none d-lg-block text-center">Lic. en Comunicación Periodística.
               Voluntaria en el Barrio 31 de la Ciudad de Bs. As., en Colonia Barragan,
               Mar del Plata y Un Techo para mi País. Experiencia laboral en Cáritas Buenos Aires y
               Ministerio de Desarrollo Social de GCBA.</p>
@@ -246,10 +240,10 @@
         </div>
         <div class="col">
             <div class="card-product-1 bg-white">
-              <%= image_tag "juli.jpg", class: "avatar", alt: "avatar" %>
+
               <div class="card-product-infos-1  ">
-                <h2>Julieta Iribarne</h2>
-                <p class="d-none d-lg-block">Maestra para el nivel primario.
+                <h2 class="text-center">Julieta Iribarne</h2>
+                <p class="d-none d-lg-block text-center">Maestra para el nivel primario.
                 Voluntaria en la Villa 21-24, Villa Soldati, Geriátrico en la Ciudad de Bs As. Experiencia laboral
                 Tutorías pedagógicas en la Fundación Haciendo Camino y
                 Apoyo escolar a niños del nivel primario y secundario.</p>
@@ -257,19 +251,19 @@
                 Voluntaria en la Villa 21-24, Villa Soldati y Geriátrico en la Ciudad de Buenos Aires.
                 </p>
               </div>
+              <%= image_tag "juli.jpg", class: "avatar", alt: "avatar" %>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
    <div class="container">
     <div class="footer">
       <div class="footer-links">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/somostupuenteok/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Somos-Tu-Puente-110626074453755" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto: somostupuenteok@gmail.com"><i class="far fa-envelope"></i></a>
       </div>
       <div class="footer-copyright d-none d-lg-block">
         Proyecto hecho con <i class="fas fa-heart"></i> de Somos tu Puente
