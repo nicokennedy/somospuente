@@ -43,7 +43,7 @@ h4 {
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: black;
 }
 .footer-links {
   display: flex;
@@ -51,13 +51,15 @@ h4 {
 }
 .footer-links a {
   color: black;
-  opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
+  color: black;
 }
 .footer-links a:hover {
   opacity: 1;
+  background-color: #00838a; /* Green */
+  color: #ffa891;
 }
 .footer .fa-heart {
   color: #D23333;
@@ -251,6 +253,10 @@ h4 {
   transform: rotateY(180deg);
   text-align: center;
 
+}
+
+.card-projects-image {
+  height: 180px;
 }
 
 // Specific CSS for your home-page
