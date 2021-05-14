@@ -19,132 +19,462 @@
         <div class="row">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                <div class="card-projects">
-                    <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
-                    <p class= "mt-3 text-left"><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
-                </div>
-                <div class="card-body">
-                  <!-- Button trigger modal -->
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">QUIERO DONAR</button>
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="flip-card">
-                          <h4 class="card-title text-center"><strong>Acceder estudiando</strong></h4>
-                          <p><i class="far fa-calendar-alt text-primary fa-1x"></i> 6 meses DISPLAY GRID   <i class="fas fa-hand-holding-usd"></i> $180.000</p>
-                          <p><i class="fas fa-graduation-cap"></i> Educación    <i class="fas fa-map-marker-alt"></i> Buenos Aires</p>
-                          <p class="text-left mt-5"><i class="fas fa-plus"></i> Información <i class="fas fa-arrow-circle-right"></i></p>
-                          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                            + Información
-                          </button>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          <span>60% recaudado</span>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                       </div>
-                    </div>
-                    <br>
-                    <div class="text-center">
-                      <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
-                      target="_blank"><strong>Quiero Donar</strong></a>
-                    </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                <div class="card-projects">
-                    <%= image_tag "taller.png", alt: "Somos tu puente", class: "image-card" %>
-                    <p class= "mt-3 text-left"><%= image_tag "avatarmonte.png", class: "avatar", alt: "avatar" %><strong> Monte Adentro</strong></p>
-                </div>
-                <div class="card-body">
-                   <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Taller de Oficios </strong></h5>
-                          <p class="text-left">Brindamos talleres de oficios semanales de tejido, costura,
-                          manualidades y gastronomía a 180 mujeres y madres rurales. </p>
-                          <p><i class="far fa-calendar-alt"></i> 11 meses     <i class="fas fa-hand-holding-usd"></i> $880.200</p>
-                          <p><i class="fas fa-briefcase"></i> Inserción Laboral     <i class="fas fa-map-marker-alt"></i> Chaco</p>
-                          <p class="text-left mt-5"><i class="fas fa-plus"></i> Información <i class="fas fa-arrow-circle-right"></i></p>
-                        </div>
-                        <div class="flip-card-back">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Taller de Oficios </strong></h5>
-                          <p class="text-left ">Con el objetivo de empoderar a las mujeres y madres rurales para que puedan generar
-                            ngresos que colaboren con el sostenimiento del hogar, brindamos talleres de oficios semanales con un enfoque
-                            mprendedor en las disciplinas de tejido, costura, manualidades y gastronomía, dictados por profesoras locales
-                            formadas en dichas disciplinas. Participan 180 mujeres y madres rurales.
-                          </p>
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-                          <span>10% recaudado</span>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                       </div>
-                    </div>
-                    <br>
-                    <div class="text-center">
-                      <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSf66TMaEng3WzhdBNHoCn4--y1ABNweXYrB10VcKm9kOe-s1w/viewform?usp=sf_link"
-                      target="_blank"><strong>Quiero Donar</strong></a>
-                    </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                <div class="card-projects">
-                  <%= image_tag "pilares1.jpg", alt: "Somos tu puente", class: "image-card"  %>
-                  <p class= "mt-3 text-left"><%= image_tag "avatarpilares.png", class: "avatar", alt: "avatar" %><strong> Pilares</strong></p>
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Primera infancia en familia</strong></h5>
-                          <p class="text-left">El proyecto busca promover el bienestar y la salud integral de
-                          30 niños y niñas de entre 0 y 5 años que viven en la villa 21-24 de Barracas (CABA). </p>
-                          <p><i class="far fa-calendar-alt"></i> 12 meses     <i class="fas fa-hand-holding-usd"></i> $900.000</p>
-                          <p><i class="fas fa-medkit"></i> Salud    <i class="fas fa-map-marker-alt"></i> CABA</p>
-                          <p class="text-left mt-5"><i class="fas fa-plus"></i> Información <i class="fas fa-arrow-circle-right"></i></p>
-                        </div>
-                        <div class="flip-card-back">
-                          <h5 class="card-title font-italic text-center bg-light"><strong>Primera infancia en familia</strong></h5>
-                          <p class="text-left ">El proyecto busca promover el bienestar y la salud integral de 30
-                          niños y niñas de entre 0 y 5 años que viven en la villa 21-24 de Barracas (CABA).
-                          Se trabaja en 4 dispositivos diferentes: embarazo y primer año de vida, prevención de
-                          la desnutrición y malnutrición, prevención de violencia de género con las madres de niños
-                          y un dispositivo de juego y estimulación para el desarrollo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          <span>60% recaudado</span>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                       </div>
-                    </div>
-                    <br>
-                    <div class="text-center">
-                      <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSciBViHUdsj4RG09VGxyir7o5nF8jg2Y5XSJJs9jrEoslJ1YQ/viewform?usp=sf_link"
-                      target="_blank"><strong>Quiero Donar</strong></a>
-                    </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+                <div class="card h-100 shadow p-3 bg-body rounded">
+                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+                  <div class="card border-white">
+                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                              de una ayuda económica mensual que le permite solventar gastos de estudio,
+                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                              de la provincia de Buenos Aires.
+                            </div>
+                            <div class="modal-footer">
+                              <div class="text-center">
+                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                                target="_blank"><strong>Quiero Donar</strong></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                                </div>
+                                <div class="col text-center">
+                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $180.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container p-2">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
+                                </div>
+                                <div class="col text-center p-1">
+                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col text-center">
+                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                                   <strong>+ Información</strong>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span>60% recaudado</span>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                        target="_blank"><strong>Quiero Donar</strong></a>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,7 +488,7 @@
           <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-                <%= image_tag "paso1.png", alt: "Somos tu puente"%>
+                <%= image_tag "paso1.png", alt: "Somos tu puente", class: "image-card-2"%>
                 <p>La ONG carga el proyecto que quiere promocionar para recibir donaciones.</p>
               </div>
             </div>
@@ -166,7 +496,7 @@
           <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-                <%= image_tag "paso2.png", alt: "Somos tu puente" %>
+                <%= image_tag "paso2.png", alt: "Somos tu puente", class: "image-card-2"%>
                 <p>La empresa busca el proyecto para realizar su donación.</p>
               </div>
             </div>
@@ -174,7 +504,7 @@
            <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-                <%= image_tag "paso3.png", alt: "Somos tu puente"%>
+                <%= image_tag "paso3.png", alt: "Somos tu puente", class: "image-card-2"%>
                 <p>La empresa selecciona el proyecto que desea.</p>
               </div>
             </div>
@@ -184,7 +514,7 @@
           <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-              <%= image_tag "paso4.png", alt: "Somos tu puente"%>
+              <%= image_tag "paso4.png", alt: "Somos tu puente", class: "image-card-2"%>
               <p>La empresa recibe la información con los datos de la ONG para realizar la donación.</p>
               </div>
             </div>
@@ -192,7 +522,7 @@
           <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-              <%= image_tag "paso5.png", alt: "Somos tu puente"%>
+              <%= image_tag "paso5.png", alt: "Somos tu puente", class: "image-card-2"%>
               <p>La empresa y la ONG reciben una notificación de la donación realizada.</p>
               </div>
             </div>
@@ -200,7 +530,7 @@
           <div class="col-sm">
             <div class="card-product bg-white">
               <div class="card-product-infos">
-              <%= image_tag "paso6.png", alt: "Somos tu puente"%>
+              <%= image_tag "paso6.png", alt: "Somos tu puente", class: "image-card-2"%>
               <p>La empresa recibe un reporte con los avances y logros del proyecto.</p>
               </div>
             </div>
@@ -217,18 +547,18 @@
           productivas.</p>
           <div class="row align-items-center text-center">
             <div class="col">
-              <i class="far fa-handshake"></i><p class="d-none d-lg-block">Compromiso</p>
+              <i class="far fa-handshake text-primary"></i><p>Compromiso</p>
             </div>
             <div class="col">
-              <i class="fas fa-users"></i><p class="d-none d-lg-block">Trabajo en equipo</p>
+              <i class="fas fa-users text-primary"></i><p>Trabajo en equipo</p>
             </div>
           </div>
           <div class="row align-items-center text-center">
             <div class="col">
-              <i class="fas fa-user-tie"></i><p class="d-none d-lg-block">Profesionalismo</p>
+              <i class="fas fa-user-tie text-primary"></i><p>Profesionalismo</p>
             </div>
             <div class="col">
-              <i class="fas fa-hand-holding-water"></i><p class="d-none d-lg-block">Gestión transparente</p>
+              <i class="fas fa-hand-holding-water text-primary"></i><p>Gestión transparente</p>
             </div>
           </div>
         </div>
@@ -243,6 +573,7 @@
               <%= image_tag "victoria.jpg", class: "avatar", alt: "avatar" %>
             </div>
             <div class="col-9">
+              <h4 class="text-center">Victoria Kennedy</h4>
               <p class="d-none d-lg-block text-center">Lic. en Comunicación Periodística.
               Voluntaria en el Barrio 31 de la Ciudad de Bs. As., en Colonia Barragan,
               Mar del Plata y Un Techo para mi País. Experiencia laboral en Cáritas Buenos Aires y
