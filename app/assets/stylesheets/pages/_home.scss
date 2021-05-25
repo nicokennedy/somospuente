@@ -280,3 +280,38 @@ h5 {
   border-radius: 50%;
 }
 // Specific CSS for your home-page
+
+.social {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0; /* Establecemos la barra en la izquierda */
+  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+  .social ul {
+    list-style: none;
+  }
+
+  .social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #ffa891;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+  }
+
+  // .social ul li .fab-fa-instagram {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+  // .social ul li .fab-fa-facebook {background: #00abf0;}
+  // .social ul li .icon-googleplus {background: #d95232;}
+  // .social ul li .icon-pinterest {background: #ae181f;}
+  // .social ul li .fas-fa-envelope {background: #666666;}
+
+  .social ul li a:hover {
+    background: #00838a; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+
+
