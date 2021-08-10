@@ -22,365 +22,372 @@
         <li><a href="mailto:contacto@somostupuente.com" class="fas fa-envelope"></a></li>
       </ul>
     </div>
-    <div class="container bg-light2" id="proyectos">
-        <h4><strong>Principales proyectos</strong></h4>
-        <div class="row">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col mt-3">
-                <div class="card h-100">
-                <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
-                              de una ayuda económica mensual que le permite solventar gastos de estudio,
-                              acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
-                              de la provincia de Buenos Aires.
 
-                              <ul style="list-style-type:none" class="pt-3">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 6 meses</p>
+    <div class="container">
+      <h4><strong>Principales proyectos</strong></h4>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "mujeres20001.jpg", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarmujeres.png", class: "avatar", alt: "avatar" %><strong> Mujeres 2000</strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Acceder estudiando</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        El Programa Acceder Estudiando busca facilitar el acceso a la educación a través
+                        de una ayuda económica mensual que le permite solventar gastos de estudio,
+                        acompañamiento individual y asistencia académica a 5 jóvenes de barrios vulnerables
+                        de la provincia de Buenos Aires.
 
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $362.000</p>
+                        <ul style="list-style-type:none" class="pt-3">
+                          <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 6 meses</p>
 
-                                  <p><i class="fas fa-graduation-cap text-primary"></i> Área: Educación</p>
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $362.000</p>
 
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Tigre, Buenos Aires</p>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
+                          <p><i class="fas fa-graduation-cap text-primary"></i> Área: Educación</p>
+
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Tigre, Buenos Aires</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                          target="_blank"><strong>Quiero Donar</strong></a>
                         </div>
                       </div>
-                      <div>
-                            <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $362.000</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
-                        target="_blank"><strong>Quiero Donar</strong></a>
-                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col  mt-3">
-                <div class="card h-100">
-                <%= image_tag "taller.png", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatarmonte.png", class: "avatar", alt: "avatar" %><strong> Monte Adentro </strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Taller de oficios para mujeres</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Con el objetivo de empoderar a las mujeres y madres rurales para que puedan
-                              generar ingresos que colaboren con el sostenimiento del hogar, brindamos
-                              talleres de oficios semanales con un enfoque emprendedor en las disciplinas de
-                              tejido, costura, manualidades y gastronomía, dictados por profesoras locales
-                              formadas en dichas disciplinas. Participan 180 mujeres y madres rurales.
-                                <ul style="list-style-type:none" class="pt-3">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 11 meses</p>
-
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $880.200</p>
-
-                                  <p><i class="fas fa-briefcase text-primary"></i> Área: Trabajo</p>
-
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Tres Isletas, Chaco</p>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Acceder estudiando</strong></h5>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
                       </div>
-                      <div>
-                          <h5 class="card-title text-center"><strong>Taller de oficios para mujeres</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 11 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $880.200</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-briefcase text-primary"></i> Trabajo</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Chaco</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal2">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-hand-holding-usd text-primary"></i> $362.000</p>
                       </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
-                        </div>
+                    </div>
+                  </div>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="fas fa-graduation-cap text-primary"></i> Educación</p>
                       </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
-                        target="_blank"><strong>Quiero Donar</strong></a>
+                      <div class="col text-center">
+                        <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
                       </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal1">
+                          <strong>+ Información</strong>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col  mt-3">
-                <div class="card h-100">
-                <%= image_tag "pilares.jpg", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatarpilares.png", class: "avatar", alt: "avatar" %><strong> Pilares</strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Primera infancia en familia</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              El proyecto busca promover el bienestar y la salud integral de 30 niños y niñas
-                              de entre 0 y 5 años que viven en la villa 21-24 de Barracas (CABA). Se trabaja
-                              en 4 dispositivos diferentes: Embarazo y primer año de vida, prevención de
-                              la desnutrición y malnutrición, prevención de violencia de género con las madres
-                              de niños y un dispositivo de juego y estimulación para el desarrollo.
-                                <ul style="list-style-type:none" class="pt-3">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 12 meses</p>
-
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $540.000</p>
-
-                                  <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
-
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: CABA</p>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://forms.gle/C1aJSyTRLqipbZNb7"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                            <h5 class="card-title text-center"><strong>Primera infancia en familia</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 12 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $540.000</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-medkit text-primary"></i> Salud</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> CABA</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal3">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://forms.gle/C1aJSyTRLqipbZNb7"
-                        target="_blank"><strong>Quiero Donar</strong></a>
-                      </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      <span>0% recaudado</span>
                   </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScVchhi6Woawl4q9BNGMSg3c2LBjBKjKXzY9NZsj5NXhtijHw/viewform?usp=sf_link"
+                  target="_blank"><strong>Quiero Donar</strong></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col  mt-3">
-                <div class="card h-100">
-                <%= image_tag "haciendocamino.jpg", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatarhaciendo.png", class: "avatar", alt: "avatar" %><strong> Haciendo Camino</strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Prevención de la desnutrición infantil</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Diagnóstico, prevención y recuperación nutricional de
-                              87 niños de 0 a 5 años de la localidad de Monte Quemado,
-                              provincia de Santiago del Estero. Mediante esta donación
-                              los niños estarían accediendo semanalmente a 2kg leche,
-                              48 pañales y los suplementos nutricionales que necesitan.
-                                <ul style="list-style-type:none" class="pt-3">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 6 meses</p>
 
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $426.000</p>
 
-                                  <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "taller.png", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarmonte.png", class: "avatar", alt: "avatar" %><strong> Monte Adentro </strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Taller de oficios para mujeres</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Con el objetivo de empoderar a las mujeres y madres rurales para que puedan
+                        generar ingresos que colaboren con el sostenimiento del hogar, brindamos
+                        talleres de oficios semanales con un enfoque emprendedor en las disciplinas de
+                        tejido, costura, manualidades y gastronomía, dictados por profesoras locales
+                        formadas en dichas disciplinas. Participan 180 mujeres y madres rurales.
+                        <ul style="list-style-type:none" class="pt-3">
+                          <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 11 meses</p>
 
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Monte Quemado, Sgo. del Estero</p>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6BfSRnkVMxjDZD4Q7NCBX9Aj2-6nlA-Y7PthtjgKY3EYScQ/viewform?usp=sf_link"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $880.200</p>
+
+                          <p><i class="fas fa-briefcase text-primary"></i> Área: Trabajo</p>
+
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Tres Isletas, Chaco</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
+                          target="_blank"><strong>Quiero Donar</strong></a>
                         </div>
                       </div>
-                      <div>
-                            <h5 class="card-title text-center"><strong>Nutrición infantil</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $426.000</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-medkit text-primary"></i> Salud</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Sgo. del Estero</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal4">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6BfSRnkVMxjDZD4Q7NCBX9Aj2-6nlA-Y7PthtjgKY3EYScQ/viewform?usp=sf_link"
-                        target="_blank"><strong>Quiero Donar</strong></a>
-                      </div>
+                    </div>
                   </div>
+                </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Taller de oficios para mujeres</strong></h5>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="far fa-calendar-alt text-primary"></i> 11 meses</p>
+                        </div>
+                        <div class="col text-center">
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> $880.200</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="fas fa-briefcase text-primary"></i> Trabajo</p>
+                        </div>
+                        <div class="col text-center">
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Chaco</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="row">
+                        <div class="col text-center">
+                          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal2">
+                           <strong>+ Información</strong>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                    <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
+                  target="_blank"><strong>Quiero Donar</strong></a>
                 </div>
               </div>
             </div>
-            <div class="col mt-3">
-                <div class="card h-100">
-                <%= image_tag "3t.png", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatar3t.png", class: "avatar", alt: "avatar" %><strong> Comunidad 3T</strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "pilares.jpg", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarpilares.png", class: "avatar", alt: "avatar" %><strong> Pilares</strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Primera infancia en familia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        El proyecto busca promover el bienestar y la salud integral de 30 niños y niñas
+                        de entre 0 y 5 años que viven en la villa 21-24 de Barracas (CABA). Se trabaja
+                        en 4 dispositivos diferentes: Embarazo y primer año de vida, prevención de
+                        la desnutrición y malnutrición, prevención de violencia de género con las madres
+                        de niños y un dispositivo de juego y estimulación para el desarrollo.
+                        <ul style="list-style-type:none" class="pt-3">
+                          <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 12 meses</p>
+
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $540.000</p>
+
+                          <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
+
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: CABA</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://forms.gle/C1aJSyTRLqipbZNb7"
+                          target="_blank"><strong>Quiero Donar</strong></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Primera infancia en familia</strong></h5>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="far fa-calendar-alt text-primary"></i> 12 meses</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-hand-holding-usd text-primary"></i> $540.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="fas fa-medkit text-primary"></i> Salud</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-map-marker-alt text-primary"></i> CABA</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal3">
+                         <strong>+ Información</strong>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://forms.gle/C1aJSyTRLqipbZNb7"
+                  target="_blank"><strong>Quiero Donar</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEGUNDA FILA  -->
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "haciendocamino.jpg", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarhaciendo.png", class: "avatar", alt: "avatar" %><strong> Haciendo Camino</strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Prevención de la desnutrición infantil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Diagnóstico, prevención y recuperación nutricional de
+                        87 niños de 0 a 5 años de la localidad de Monte Quemado,
+                        provincia de Santiago del Estero. Mediante esta donación
+                        los niños estarían accediendo semanalmente a 2kg leche,
+                        48 pañales y los suplementos nutricionales que necesitan.
+                        <ul style="list-style-type:none" class="pt-3">
+                          <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 6 meses</p>
+
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $426.000</p>
+
+                          <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
+
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Monte Quemado, Sgo. del Estero</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6BfSRnkVMxjDZD4Q7NCBX9Aj2-6nlA-Y7PthtjgKY3EYScQ/viewform?usp=sf_link"
+                          target="_blank"><strong>Quiero Donar</strong></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Nutrición infantil</strong></h5>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="far fa-calendar-alt text-primary"></i> 6 meses</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-hand-holding-usd text-primary"></i> $426.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="fas fa-medkit text-primary"></i> Salud</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-map-marker-alt text-primary"></i> Sgo. del Estero</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal4">
+                         <strong>+ Información</strong>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                    <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6BfSRnkVMxjDZD4Q7NCBX9Aj2-6nlA-Y7PthtjgKY3EYScQ/viewform?usp=sf_link"
+                  target="_blank"><strong>Quiero Donar</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "3t.png", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatar3t.png", class: "avatar", alt: "avatar" %><strong> Comunidad 3T</strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -406,150 +413,245 @@
                                   <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Marcos Paz, Buenos Aires</p>
                               </ul>
                             </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScuxUAwLXYabNUgdqdi5yedpxpGem8WV3Gmw5mkbETyS_ycHw/viewform?usp=sf_link"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                            <h5 class="card-title text-center"><strong>Agricultura Familiar</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 12 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $750.000</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-seedling text-primary"></i> Ambiente</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal5">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScuxUAwLXYabNUgdqdi5yedpxpGem8WV3Gmw5mkbETyS_ycHw/viewform?usp=sf_link"
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScuxUAwLXYabNUgdqdi5yedpxpGem8WV3Gmw5mkbETyS_ycHw/viewform?usp=sf_link"
                         target="_blank"><strong>Quiero Donar</strong></a>
+                        </div>
                       </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col  mt-3">
-                <div class="card h-100">
-                <%= image_tag "cunina1.jpg", alt: "Somos tu puente", class: "image-card" %>
-                <div class="card h-100 shadow p-3 bg-body rounded">
-                  <p><%= image_tag "avatarcunina.png", class: "avatar", alt: "avatar" %><strong> Asociación Civil CUNINA</strong></p>
-                  <div class="card border-white">
-                      <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Aplicación móvil para la restitución de derechos de los/as adolescentes.</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Pensamos una aplicación móvil que acerque a los/as adolescentes a los/as profesionales y recursos necesarios
-                              para la restitución de sus derechos. La pensamos como una herramienta que les brinde información
-                              que esté disponible para cuando ellos la demanden y que les permita conocer, mediante un lenguaje
-                              digital, cuáles son sus derechos, qué recursos hay disponibles que les garantizan el acceso a ellos
-                              y cómo los pueden ejercer.
-                                <ul style="list-style-type:none" class="pt-3">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 4 meses</p>
-
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $150.000</p>
-
-                                  <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
-
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Caba</p>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="text-center">
-                                <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSenAu784dsfySa4b4EsEjWzIoK1wTmX7g1rCcNTLS50sehZzg/viewform?usp=sf_link"
-                                target="_blank"><strong>Quiero Donar</strong></a>
-                              </div>
-                            </div>
-                          </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Agricultura Familiar</strong></h5>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="far fa-calendar-alt text-primary"></i> 12 meses</p>
+                        </div>
+                        <div class="col text-center">
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> $750.000</p>
                         </div>
                       </div>
-                      <div>
-                            <h5 class="card-title text-center"><strong>Restitución de Derechos</strong></h5>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="far fa-calendar-alt text-primary"></i> 4 meses</p>
-                                </div>
-                                <div class="col text-center">
-                                  <p><i class="fas fa-hand-holding-usd text-primary"></i> $150.000</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container p-2">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <p><i class="fas fa-medkit text-primary"></i> Salud</p>
-                                </div>
-                                <div class="col text-center p-1">
-                                  <p><i class="fas fa-map-marker-alt text-primary"></i> CABA</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col text-center">
-                                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal6">
-                                   <strong>+ Información</strong>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            <span>0% recaudado</span>
+                    </div>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="fas fa-seedling text-primary"></i> Ambiente</p>
+                        </div>
+                        <div class="col text-center">
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Buenos Aires</p>
                         </div>
                       </div>
-                      <br>
-                      <div class="text-center">
-                        <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSenAu784dsfySa4b4EsEjWzIoK1wTmX7g1rCcNTLS50sehZzg/viewform?usp=sf_link"
-                        target="_blank"><strong>Quiero Donar</strong></a>
+                    </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal5">
+                         <strong>+ Información</strong>
+                        </button>
                       </div>
+                    </div>
                   </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLScuxUAwLXYabNUgdqdi5yedpxpGem8WV3Gmw5mkbETyS_ycHw/viewform?usp=sf_link"
+                  target="_blank"><strong>Quiero Donar</strong></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "cunina1.jpg", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarcunina.png", class: "avatar", alt: "avatar" %><strong> Asociación Civil CUNINA</strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aplicación móvil para la restitución de derechos de los/as adolescentes.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Pensamos una aplicación móvil que acerque a los/as adolescentes a los/as profesionales y recursos necesarios
+                        para la restitución de sus derechos. La pensamos como una herramienta que les brinde información
+                        que esté disponible para cuando ellos la demanden y que les permita conocer, mediante un lenguaje
+                        digital, cuáles son sus derechos, qué recursos hay disponibles que les garantizan el acceso a ellos
+                        y cómo los pueden ejercer.
+                          <ul style="list-style-type:none" class="pt-3">
+                            <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 4 meses</p>
+
+                            <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $150.000</p>
+
+                            <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
+
+                            <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Caba</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSenAu784dsfySa4b4EsEjWzIoK1wTmX7g1rCcNTLS50sehZzg/viewform?usp=sf_link"
+                          target="_blank"><strong>Quiero Donar</strong></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Restitución de Derechos</strong></h5>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="far fa-calendar-alt text-primary"></i> 4 meses</p>
+                        </div>
+                        <div class="col text-center">
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> $150.000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container p-2">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p><i class="fas fa-medkit text-primary"></i> Salud</p>
+                        </div>
+                        <div class="col text-center p-1">
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> CABA</p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal6">
+                         <strong>+ Información</strong>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSenAu784dsfySa4b4EsEjWzIoK1wTmX7g1rCcNTLS50sehZzg/viewform?usp=sf_link"
+                  target="_blank"><strong>Quiero Donar</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <%= image_tag "pata.jpg", alt: "Somos tu puente", class: "image-card" %>
+            <div class="card h-100 shadow p-3 bg-body rounded">
+              <p><%= image_tag "avatarpata.png", class: "avatar", alt: "avatar" %><strong> Asociación Civil Pata Pila </strong></p>
+              <div class="card border-white">
+                <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Acceso al agua segura para comunidades originarias</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        El objetivo de este proyecto es garantizar el acceso al agua potable y segura en comunidades originarias del
+                        norte de Salta, a través de grandes obras de infraestructura en las que participan los mismos integrantes 
+                        de la comunidad. Este es un derecho humano indispensable para una vida digna: cada persona debe disponer de 
+                        agua suficiente, saludable, aceptable, físicamente accesible y asequible para su uso personal y comunitario.
+                        <ul style="list-style-type:none" class="pt-3">
+                          <p><i class="far fa-calendar-alt text-primary"></i> Tiempo total del proyecto: 3 meses</p>
+
+                          <p><i class="fas fa-hand-holding-usd text-primary"></i> Monto total del proyecto: $600.000</p>
+
+                          <p><i class="fas fa-medkit text-primary"></i> Área: Salud</p>
+
+                          <p><i class="fas fa-map-marker-alt text-primary"></i> Zona: Las comunidades El Porvenir, 
+                          Bartolomé Menendez y José Pedro en la localidad de Santa Victoria Este, al norte de la provincia de Salta.</p>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                          <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
+                          target="_blank"><strong>Quiero Donar</strong></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="card-title text-center"><strong>Acceso al agua</strong></h5>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="far fa-calendar-alt text-primary"></i> 3 meses</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-hand-holding-usd text-primary"></i> $600.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container p-2">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p><i class="fas fa-medkit text-primary"></i> Salud</p>
+                      </div>
+                      <div class="col text-center">
+                        <p><i class="fas fa-map-marker-alt text-primary"></i> Salta</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col text-center">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal7">
+                        <strong>+ Información</strong>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      <span>0% recaudado</span>
+                  </div>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a class="button1" href="https://forms.gle/zUGreQLK5znJ9Wqm6"
+                  target="_blank"><strong>Quiero Donar</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     <div class="container-fluid bg-white" id="comofunciona">
       <div class="container bg-white">
         <h4><strong>¿Cómo funciona?</strong></h4>
